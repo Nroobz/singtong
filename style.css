@@ -216,12 +216,24 @@ p, div {
         margin-bottom: 0;
         padding: 1%;
     }
+<<<<<<< HEAD
     .foot {background-color: transparent;}
     
     background-color: rgba(236,236,236,0);
+=======
+    
+    .foot {
+      background-color: transparent;
+    }
+>>>>>>> refs/remotes/origin/master
     .img-responsive {
     max-width: 68%;
     margin: 0 auto;
 }
     
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> refs/remotes/origin/master
