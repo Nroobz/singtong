@@ -4,29 +4,31 @@ body {
 }
 
 a:link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:active {
-    text-decoration: underline;
+  text-decoration: none;
 }
 
-.table thead > tr > th, 
-.table tbody > tr > th, 
-.table tfoot > tr > th, 
-.table thead > tr > td, 
-.table tbody > tr > td, 
+.table thead > tr > th,
+.table tbody > tr > th,
+.table tfoot > tr > th,
+.table thead > tr > td,
+.table tbody > tr > td,
 .table tfoot > tr > td {
-    border: none;margin: 0;padding: 0;}
-
+  border: none;
+  margin: 0;
+  padding: 0;
+}
 /* Colours 
 
 Pomegranite(red):
@@ -40,7 +42,6 @@ rgba(245,215,110)
 
 Smoke White:
 rgba(236,236,236,1) */
-
 /* Type */
 /*
 
@@ -50,197 +51,175 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
     font-family: 'Your Font';
 } */
-
 /* Objects */
 
-
-.wrap {
-    position: relative;
+.whole-body {
+  margin: 3% auto;
 }
-
-
 /* hero box */
-.bar {
-    background-color:rgba(236,236,236,.8);
-    border-radius: 30px;
-}
-
-.logo {
-    ;
-    border-top-left-radius: 30px;
-    border-top-right-radius:30px;
-    margin: 0 auto;
+.head { 
+    background-color: rgba(236, 236, 236, .7);
+    border-radius: 6px 6px 3px 3px;
     padding: 3%;
-    max-width: 280px;
+    margin-bottom: 3%;
 }
 
-.hero-img {
+.img-responsive {
+    max-width: 68%;
+    margin: 0 auto;
+}
+
+
+    
     
 }
+/* foot box*/
+.col-sm-4 {}
 
+.foot {
+  padding: 3%;
+  background-color: rgba(236,236,236,.7);
+    border-radius: 3px 3px 6px 6px;
+}
+/* About boxes*/
 
-.about {
-    text-align: center;
+.about,
+.social,
+.copyr {
 }
 
-.about h3{
-    display: inline-block;
-    padding-top: 6px;
-    border-top: 1px dashed rgba(236,236,236,.9);
-    text-shadow: 0 1px 0 rgba(236,236,236,.3);
+.about h3 {
+  padding: 0;
+  border-top: 1px dashed rgba(236, 236, 236, .9);
+  text-shadow: 0 1px 0 rgba(236, 236, 236, .3);
 }
 
-
-.about p{
-    font-size: 110%;
-    line-height: 140%;
-    text-shadow: 0 1px 0 rgba(236,236,236,.3);
+.about p {
+  font-size: 110%;
+  line-height: 140%;
+  text-shadow: 0 1px 0 rgba(236, 236, 236, .3);
 }
-
-
-
 /* Social */
 
-.social {
-     ;
-}
-
 .fa-twitter {
-    color:white;
-    background-color: rgba(0,172,237,1);
+  color: white;
+  background-color: rgba(0, 172, 237, 1);
 }
 
 .fa-instagram {
-    color: white;
-    background-color: rgba(18,86,136,1);
+  color: white;
+  background-color: rgba(18, 86, 136, 1);
 }
 
-.fa-3x/* insta/twitr */ {
-    padding: 1.2rem;
-    border-radius: 50%;
-    margin: 3%;
-    padding: 6%;
-    border: 2px dashed rgba(236,236,236,1);
-    box-shadow: 0 1px 0 rgba(236,236,236,.3);
-    }
+.fa-3x
+/* insta/twitr */
 
-/* foot */
+{
+  padding: 1.2rem;
+  border-radius: 50%;
+  margin: 3%;
+  padding: 6%;
+  border: 2px dashed rgba(236, 236, 236, .7);
+}
+/* copyr box */
 
-.foot {
-    background-color: rgba(8,105,16,1);
-    color: rgba(236,236,236, 1);
-    padding: 2%;
-    border-top: 1px solid rgba(242,38,19,.3);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    text-shadow: 0 1px 0 rgba(236,236,236,.3);
+.copyr {
+  /*background-color: rgba(8, 105, 16, .9);*/
+    
+  /*color: rgba(236, 236, 236, 1);*/
+  padding: 2%;
+  /*border-top: 1px dashed rgba(242, 38, 19, .9);*/
+    border-top: 1px dashed rgba(236, 236, 236, .9);
+  text-shadow: 0 1px 0 rgba(236, 236, 236, .3);
 }
 
+.copyr > p {
+  font-size: 90%;
+}
 /* Menu */
 /* Menu-box */
+
 .menu-head {
-    display:inline-block;
-    background-color: rgba(242,38,19,1);
-    padding: 3%;
-    margin: 3% auto;
-    width: 100%;
-    box-shadow: 0 1px 0 rgba(212,18,9,1),
-        0 -2px 0 rgba(252,58,39,1);
-    border-radius: 2px;
+  display: inline-block;
+  background-color: rgba(242, 38, 19, 1);
+  padding: 3%;
+  width: 100%;
+    margin-bottom: 3%;
+  box-shadow: 0 1px 0 rgba(212, 18, 9, 1), 0 -1px 0 rgba(252, 58, 39, 1);
+  border-radius: 2px;
+}
+.menu-head > h1,
+.menu-head > span {
+  display: inline;
+  color: rgba(236, 236, 236, 1);
+  vertical-align: middle;
+  line-height: 100%;
+  text-shadow: 0 2px 0 rgba(212, 18, 9, 1), 0 -1px 0 rgba(252, 58, 39, 1);
 }
 
-.menu-head > h1, .menu-head > span{
-    display: inline;
-    color:rgba(236,236,236,1);
-    vertical-align: middle;
-    line-height: 100%;
-    text-shadow: 0 2px 0 rgba(212,18,9,1),
-        0 -1px 0 rgba(252,58,39,1);
+.menu-head > h1:hover,
+.menu-head > span:hover {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0 2px 0 rgba(212, 18, 9, 1), 0 -1px 0 rgba(252, 58, 39, 1);
 }
 
-.menu-head > h1:hover, .menu-head > span:hover{
-    color:rgba(255,255,255,1);
-
-    text-shadow: 0 2px 0 rgba(212,18,9,1),
-        0 -1px 0 rgba(252,58,39,1);
+.menu-head > span {
+  float: right;
 }
-
-.menu-head > span{
-    float: right;
-}
-
 /* collapsed id's */
-#burgers, #sides, #extras {
-    background-color: rgba(236,236,236,.1);
-    border-radius: 2px;
-}
 
-/* Menu item+price*/
+#burgers,
+#sides,
+#extras {
+  background-color: rgba(236, 236, 236, .1);
+  border-radius: 2px;
+}
 
 .table {
-    background-color: rgba(236,236,236,.7);
-    border-radius: 2px;
+  background-color: rgba(236, 236, 236, .7);
+  border-radius: 2px;
 }
 
-.table tr{
-    
-}
-
-.menu-item p, .menu-price p {
-    color:rgba(20,50,20,1);
-    text-shadow: 0 1px 0 rgba(10,10,10,.2),
-                0 -1px 0 rgba(255,255,255,.5);
-    font-size: 150%;
-    padding-left: 1em;
-    border-bottom: 1px dashed rgba(236,236,236,.5);
-}
-
-.menu-price  {
-    position: relative;
-}
-
-.menu-price p{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-
-
-.extra {
-    font-style: oblique;
-    
+.menu-item p,
+.menu-price p {
+  color: rgba(20, 50, 20, 1);
+  text-shadow: 0 1px 0 rgba(10, 10, 10, .2), 0 -1px 0 rgba(255, 255, 255, .5);
+  font-size: 150%;
+  padding-left: 1em;
+  border-bottom: 1px dashed rgba(236, 236, 236, .5);
 }
 
 .menu-price {
-    text-align: center;
+  position: relative;
+  text-align: center
 }
 
+.menu-price p {
+  padding-right: 1em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 
-
-
+.extra {
+  font-style: oblique;
+}
 /* Main styling for desktops
    >=768px more than or equal to , for tablets and    bigger this is for layout...*/
-@media screen and (min-width:768px){
-    
-    .wrap {
-        height: ;
-}
-    
-    .whole-body {
-        background-color:rgba(236,236,236,0);
-        margin: 3% auto;
-}
-    .bar {
-    margin-top: 8px;
-    padding: 0;
-        max-width: 275px;
-}
-    
-    
-    
-    .menu-body{
-        width: 50%;
-    }
 
+@media screen and (min-width:768px) {
+
+  .menu-body { width: 50%; }
     
+    .head {
+        border-radius: 6px;
+        margin-bottom: 0;
+        padding: 1%;
+    }
+    .img-responsive {
+    max-width: 68%;
+    margin: 0 auto;
+}
+    
+
 }
