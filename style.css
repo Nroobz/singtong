@@ -216,10 +216,12 @@ p, div {
         margin-bottom: 0;
         padding: 1%;
     }
+    .foot {background-color: transparent;}
+    
+    background-color: rgba(236,236,236,0);
     .img-responsive {
     max-width: 68%;
     margin: 0 auto;
 }
     
-
 }
