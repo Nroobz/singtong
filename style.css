@@ -1,20 +1,6 @@
-/*body {
-  background: url(http://i.imgur.com/Acd0Zpi.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}*/
-#bg {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-	
-  /* Preserve aspet ratio */
-  max-width: 100%;
-  min-height: 100%;
+body {
+  background-color: rgba(4,101,20,1);
 }
-
 
 a:link {
   text-decoration: none;
@@ -221,6 +207,14 @@ p, div {
    >=768px more than or equal to , for tablets and    bigger this is for layout...*/
 
 @media screen and (min-width:768px) {
+    
+    body {
+  background: url(http://i.imgur.com/Acd0Zpi.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
   .menu-body { width: 50%; }
     
