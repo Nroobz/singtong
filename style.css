@@ -216,6 +216,10 @@ p, div {
         margin-bottom: 0;
         padding: 1%;
     }
+    
+    .foot {
+      background-color: transparent;
+    }
     .img-responsive {
     max-width: 68%;
     margin: 0 auto;
