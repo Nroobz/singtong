@@ -1,3 +1,5 @@
+
+}
 body {
   background-color: rgba(4,101,20,1);
 }
@@ -51,6 +53,15 @@ p, div {
     font-family: 'Your Font';
 } */
 /* Objects */
+
+.hero-section {
+    height: 100%;
+    width: 100%;
+  background: url(imgs/burger-731298_1920.jpg);
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .whole-body {
   margin: 3% auto;
@@ -208,13 +219,7 @@ p, div {
 
 @media screen and (min-width:768px) {
     
-    body {
-  background: url(http://i.imgur.com/Acd0Zpi.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+    
 
   .menu-body { width: 50%; }
     
