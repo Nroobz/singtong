@@ -3,19 +3,25 @@
 <head>
     <meta charset="utf-8">
     <title>"Singtong Burger House"</title>
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans:800,600|Cutive+Mono' rel='stylesheet' type='text/css'>
     <link href=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
     rel="stylesheet" type="text/css">
     <link href=
     "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
     rel="stylesheet" type="text/css">
+    
     <link href="style.css" rel="stylesheet" type="text/css">
     <meta content=
     "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     name="viewport">
+    <!-- Google maps Script, false gps locate -->
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <!-- sumome  -->
+    <script src="//load.sumome.com/" data-sumo-site-id="80bc2d7186efcb24fb9c4f8082d4a9fd3c83d9b86d49e427788b3ecffaa0f39a" async="async"></script>
 </head>
-<body>
- <!-- Navigation -->
+<body id="page-top">
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,228 +38,273 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#menu">Menu</a></li>
-                    <li><a class="page-scroll" href="#about">About</a></li>
-                    <li><a class="page-scroll" href="#location">Location &amp; Open hours</a></li>
-                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                    <li><a class="page-scroll" href="#menu"><p class="navi text-warning">Menu</p></a></li>
+                    <li><a class="page-scroll" href="#about"><p class="navi">About</p></a></li>
+                    <li><a class="page-scroll" href="#location"><p class="navi">Location &amp; Open hours</p></a></li>
+                    <li><a class="page-scroll" href="#contact"><p class="navi">Contact</p></a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
-        <div class="hero-section">
+    <div class="section1">
+        <div class="hero">
+            <h1><mark>Singtong Burgerhouse's speciality<br>down to the last bite<br>it's wo<span class="letter-fix">rt</span>h it.</mark></h1>
+        </div>
+        <div class="scroll-down">
+            <div class="text-center">
+                <a href="#menu">
+                    <span class="fa fa-play fa-2x"></span>
+                    <p class="go-down" >Onwards to the Menu!</p>
+                    <span class="fa fa-play fa-2x"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="section2" id="menu">
+        <div class="container">
+            <div class="text-center"><h2 class="section-head">Menu</h2></div>
+        <div class="row">
+            <div class="col-md-4 "><h2>Burgers</h2>
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Cheeseburger&#40;+bacon&#41;</h3>
+                        <p class="price ">£7.50&#40;+£1&#41;</p></div>
+                    <p class="desc">48 day aged Beef patty, American cheese, Singtong burger sauce, Lettuce, Onions &amp; Tomato.</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Singtong Chicken burger</h3>
+                        <p class="price ">£8.00</p></div>
+                    <p class="desc">Singtong Thai style marinade Chicken breast, Lettuce, Onions &amp; Tomato.</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Chilli burger</h3>
+                        <p class="price ">£8.00</p></div>
+                    <p class="desc">48 day aged Beef patty, Singtong chilli sauce, American cheese, Lettuce &amp; Onions.</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Vegburger</h3>
+                        <p class="price ">£7.50</p></div>
+                    <p class="desc">Shittake mushroom &amp; red bean patty, crispy Garlic Kale, Singtong tarragon mayo &amp; Onions.</p>
+                </div><!-- end of menu-item -->
+                
+            </div>
+            <div class="col-md-4 bord"><h2>Sides</h2>
+               <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Fries</h3>
+                        <p class="price ">£2.50</p></div>
+                    <p class="desc">Salted chips</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Cheesy Fries</h3>
+                        <p class="price ">£3.00</p></div>
+                    <p class="desc">Melted cheese blend over chips</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Chilli Cheese Fries</h3>
+                        <p class="price ">£4.50</p></div>
+                    <p class="desc">Melted cheese blend, Singtong chilli sauce &amp; diced Thai chillies.</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Thai Veg Spring rolls</h3>
+                        <p class="price ">£5.00</p></div>
+                    <p class="desc">Hand wrapped crispy rolls filled with _______ &amp; served with sweet chilli dip.</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Coleslaw</h3>
+                        <p class="price ">£3.00</p></div>
+                    <p class="desc">Crunchy white &amp; purple cabbage, shredded carrots &amp; Singtong slaw mayo.</p>
+                </div><!-- end of menu-item -->
+               
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Thai Prawn crackers</h3>
+                        <p class="price ">£2.00</p></div>
+                    <p class="desc">Thin &amp; crispy prawn crackers, served with sweet chilli sauce.</p>
+                </div><!-- end of menu-item -->
+                
+                </div>
+            <div class="col-md-4"><h2>Extras</h2>
+               <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Double up!</h3>
+                        <p class="price ">£4.00</p></div>
+                    <p class="desc">Stack a extra Beef patty, Chicken breast or Veg patty on your selected burger!</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>&#43;Bacon/Cheese</h3>
+                        <p class="price ">£1.00</p></div>
+                    <p class="desc">Add another layer of crispy Bacon or American cheese</p>
+                </div><!-- end of menu-item -->
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Singtong chilli sauce</h3>
+                        <p class="price ">75p</p></div>
+                    <p class="desc">Singtong chilli sauce with diced Thai chillies.</p>
+                </div><!-- end of menu-item -->
+                <br>
+                <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Drinks</h3>
+                        <p class="price ">£1.00-£1.50</p></div>
+                    <p class="desc">Coke, D.Coke, Dr Pepper, San Pelli. Limonata/Blood orange, non-alc. Beer, Ginger &amp; Root beer, Still water, etc..</p>
+                </div><!-- end of menu-item -->
+                 <!-- menu-item -->
+                <div class="menu-item">
+                    <div class="menu-item-tag ">
+                    <h3>Beers</h3>
+                        <p class="price ">£4.20</p></div>
+                    <p class="desc">Selection of Western &amp; Eastern brews.</p>
+                </div><!-- end of menu-item -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3" id="about">
+        <div class="container">
+            <div class="section-head text-center"><h2>The Story</h2></div>
+        <div class="row">
+            <div class="col-md-6 the-story">
+                <p><strong>The original Singtong Burger house was located in a small Norfolk town called Wymondham. It was set up in 1992 by Sam &amp; Wan Boutong and specialised in charcoal grilled burgers.<br> 
+With their Thai heritage, Sam &amp; Wan spent months perfecting a unique burger the “Singtong Chicken burger” a Thai-style marinaded, sliced chicken breast burger, charcoal grilled. It was their best selling burger.<br>
+Sam passed away at the age of 55 in february 2008. The merinade which has remained secret family recipe, was passed onto his son Tom. Sam's advice to Tom was, “pursue a career where you are needed in day to day life”. <br>
+                    Singtong Burgerhouse, Leather lane, Farringdon is Sam's legacy set up by his wife &amp; children: Tom, Sara, Lin, Tanapol &amp; Sathika.</strong></p>
+            </div>
+            <div class="col-md-6">
+                <img class="heritage" src="imgs/singheritage2.jpg">
+                <p class="capt">Mr Sam Boutong, standing below the menu, circa 1992.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4" id="info">
+        <div class="container"> 
+            <div class="row">
+                    <div class="col-md-4">
+                        <h3>Opening Hours</h3>
+                        <p><strong>Monday - Friday</strong><br> 11.30am - 3pm / 5.30pm - 9pm</p>
+                        <p><strong>Saturday</strong><br> 5pm - 9pm</p>
+                        <p><strong>Bank Holiday &amp; Sunday</strong><br> Closed</p>
+                </div>
+                        <div class="col-md-3">
+                        <h3>Location</h3>
+                            <address><strong>23 pella house</strong><br>Orsett st.<br>Vauxhall<br>SE11 5LX<br><abbr>P:</abbr><span class="phone">+447805850665</span></address>
+                </div>
+                <div class="col-md-5" id="map-container">
+                </div>
+            </div>
+                
+                
             
         </div>
-    <div class="section-2">
+    </div>
+    <div class="section5" id="connect">
         <div class="container">
-        <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4 social-box">
+                    <a href="#"><span class="fa fa-instagram fa-5x"></span>
+                    <p>&#64;Singtongburgers</p></a>
+                    <p>For all the eye candy!</p>
+                </div>
+                <div class="col-md-4 social-box">
+                    <a href="#"><span class="fa fa-twitter-square fa-5x"></span>
+                    <p>&#64;Singtongburgers</p></a>
+                    <p>Burger sized tweets</p>
+                </div>
+                <div class="col-md-4 social-box">
+                   <a href="#"> <span class="fa fa-paper-plane fa-5x"></span>
+                    <p>Singtongburgerhouse@gmail.com</p></a>
+                    <p>For any inquiries or feedback, we appreciate it!</p>
+                </div>
             </div>
-            <div class="col-md-4">
-            </div>
-            <div class="col-md-4">
+            <div class="row">
+                <div class="col-md-4 foot-box">
+                    <h4>Pre-order</h4>
+                    <p>If you would like to have your food ready as you arrive, for a quick getaway, etc... call us!<br>
+                    <span class="phone">+447805850665</span> <br> Please be aware that during lunch-time the phones may be very busy...</p>
+                </div>
+                <div class="col-md-4 foot-box">
+                    <h4>Careers</h4>
+                    <p>Currently looking for:<br>
+                    &#8226;Front of House Manager<br><br>
+                        &#8226;Head Chef<br>
+                        &#8226;Full-time &amp; Part-time Staff<br><br>
+                        Email us your CV, we'll reply asap!
+                    </p>
+                </div>
+                <div class="col-md-4 foot-box">
+                    <div class="center  text-center">
+                <h4>Newsletter</h4>
+                
+                <form action="" method="post">
+                    <p>Subscribe to our weekly Newsletter and stay tuned.</p><br>
+                    <div class="input-prepend"><span class="add-on"><i class="icon-envelope"></i></span>
+                        <input type="text" id="" name="" placeholder="your@email.com">
+                    </div>
+                    <br />
+                    <input type="submit" value="Subscribe Now!" class="btn btn-large" />
+              </form>
+            </div>  
+                </div>
+                <div class="col-md-12 foot-box">
+                <p>&copy; Singtong Burger House | Designed by <a href="#">nRoobz</a></p></div>
             </div>
         </div>
-        
     </div>
-   
-    <div class="container-fluid">
-<div class="container whole-body ">
-  <div class="row ">
-    <!-- Bar start -->
-    <div class="col-sm-4 head">
-        <div>
-      <h1><a href="#"><img alt=
-                    "Singtong Burger House" class="img-responsive"
-                           src="http://i.imgur.com/TNvs2BH.png"></a></h1></div>
-    </div>
-    <!-- Bar end -->
-    <!-- Menu Start -->
-    <div class="col-sm-8">
-      <div class="row">
-        <div class="col-sm-4 menu-body">
-          <a class="menu-head" data-toggle="collapse" href="#burgers">
-            <h1>Burgers</h1><span class="fa fa-plus fa-2x"></span></a>
-          <div class="collapse" id="burgers">
-            <table class="table">
-              <tr>
-                <td class="menu-item">
-                  <p>Cheeseburger</p>
-                </td>
-                <td class="menu-price">
-                  <p>£8.50</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item extra">
-                  <p>+bacon</p>
-                </td>
-                <td class="menu-price">
-                  <p>£1</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>Singtong Clucker</p>
-                </td>
-                <td class="menu-price">
-                  <p>£9.00</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>Singtong Spicer</p>
-                </td>
-                <td class="menu-price">
-                  <p>£9.00</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>Greenburger</p>
-                </td>
-                <td class="menu-price">
-                  <p>£8.50</p>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <!-- end of collapse -->
-        </div>
-        <!-- end of main-leaf -->
-        <div class="col-sm-4 menu-body">
-          <!-- Sides -->
-          <a class="menu-head" data-toggle="collapse" href="#sides">
-            <h1>Sides</h1><span class="fa fa-plus fa-2x"></span></a>
-          <div class="collapse" id="sides">
-            <table class="table">
-              <tr>
-                <td class="menu-item">
-                  <p>BBQ wings</p>
-                </td>
-                <td class="menu-price">
-                  <p>£5.50</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>Onion Rings</p>
-                </td>
-                <td class="menu-price">
-                  <p>£3.50</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>French fries</p>
-                </td>
-                <td class="menu-price">
-                  <p>£2.20</p>
-                </td>
-              </tr>
-            </table>
-          </div>
-          <!-- end of collapse -->
-          <!-- Extras -->
-          <a class="menu-head" data-toggle="collapse" href="#extras">
-            <h1>Extras</h1><span class="fa fa-plus fa-2x"></span></a>
-          <div class="collapse" id="extras">
-            <table class="table">
-              <tr>
-                <td class="menu-item extra">
-                  <p>Double it up...!</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>+Beef patty
-                    <br> +Grilled Chicken
-                    <br> +Veggie patty</p>
-                </td>
-                <td class="menu-price ">
-                  <p>£4.00</p>
-                </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>+bacon
-                    <br> +cheese
-                  </p>
-                </td>
-                <td class="menu-price">
-                  <p>£1</p>
-                  </td>
-              </tr>
-              <tr>
-                <td class="menu-item">
-                  <p>+Hot sauce</p>
-                </td>
-                <td class="menu-price">
-                  <p>£1.20</p>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </div>
-        <!--end of other-leaf -->
-      </div>
-    </div>
-    <!-- end of menu-box -->
-    <div class="col-sm-4 foot">
-      <!-- about section -->
-      <div class="about text-center">
-        <h3 class=""><strong>Opening Hours</strong></h3>
-        <p><strong>Monday to Friday</strong>
-          <br> 11am to 3pm then 5pm to 9pm
-          <br>
-          <strong>Saturdays and Bank Holidays</strong>
-          <br> 9am to 4pm</p>
-      </div>
-      <div class="about text-center">
-        <h3><strong>Location</strong></h3>
-        <p>23 Pella House, Orsett Street
-          <br> London, SE11 5LX</p>
-      </div>
-      <!-- social -->
-      <div class="social text-center">
-        <a href="https://twitter.com/singtongburgers"><span class="fa fa-twitter fa-3x"></span></a>
-        <a href="https://instagram.com/singtongburgers"><span class="fa fa-instagram fa-3x"></span></a>
-      </div>
-      <!-- copyr -->
-      <div class="copyr text-center">
-        <p>&copy; 2014
-          <script>
-            new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());
-          </script>, Singtong Burger House.</p>
-      </div>
-    </div>
-
-  </div>
-  <!-- end of main content ROW -->
-
-</div>
-<!-- main content end -->
-    </div>
+    
+    <script>	
+ 
+      function init_map() {
+		var var_location = new google.maps.LatLng(45.430817,12.331516);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+ 
+		var var_marker = new google.maps.Marker({
+			position: var_location,
+            map: var_map,
+			title:"Venice"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+		var_marker.setMap(var_map);	
+ 
+      }
+ 
+      google.maps.event.addDomListener(window, 'load', init_map);
+ 
+    </script>
     <script src=
     "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
     </script> 
     <script src=
     "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
     </script>
-    <script>
-        jQuery(document).ready(function(){
-    if (jQuery(window).width() >= 768) {
-        $(".foot").appendTo(".head");
-      $(".foot").removeClass("col-sm-4");
-    }  
-});
-jQuery(window).resize(function () {
-        if (jQuery(window).width() >= 768) {
-           $(".foot").appendTo(".head");
-          $(".foot").removeClass("col-sm-4");
-        }
-});</script>
-   
 </body>
-</html>
